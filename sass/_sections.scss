@@ -1,0 +1,34 @@
+section.page-section {
+    height: 100vh;
+    background-color: $light-color;
+    display: flex;
+    align-items: center;
+    div.page-section-row {
+        display: flex;
+        align-items: flex-start;
+        margin: 0 auto;
+        max-height: 500px;
+        width: 80%;
+        div.page-section-col {
+            width: 50%;
+            height: 100%;
+        }
+        div.page-section-col.section-image {
+            width: 50%;
+            text-align: right;
+            height: 100%;
+            img.page-section-col-image {
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+    div.page-section-row.row-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        div.page-section-col.section-image {
+            text-align: left;
+        }
+    }
+}
