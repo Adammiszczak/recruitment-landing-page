@@ -1,11 +1,11 @@
 nav.main-navigation {
-    color:white;
+    color: white;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width:80%;
+    width: 80%;
     position: fixed;
-    top:5%;
+    top: 5%;
     left: 0;
     right: 0;
     overflow: hidden;
@@ -19,7 +19,7 @@ nav.main-navigation {
     ul.main-navigation-links {
         display: flex;
         justify-content: space-around;
-        align-items: center;;
+        align-items: center;
         width: 50%;
         list-style: none;
     }

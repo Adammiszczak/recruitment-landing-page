@@ -1,7 +1,10 @@
 html,
 body,
 ul,
-h2 {
+h2,
+input,
+textarea,
+label,p {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -20,10 +23,10 @@ body {
 	}
 }
 
-
 @import "variables";
 @import "fonts";
 @import "sections";
 @import "navigation-menu";
 @import "slider";
 @import "site-navigation";
+@import "footer";

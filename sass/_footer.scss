@@ -1,0 +1,35 @@
+footer.page-footer {
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 50vh;
+    background-color: $footer-bg-color;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    div.page-footer-map {
+        margin-top:10%;
+    }
+    div.page-footer-nav{
+        margin-top:10%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        div.footer-nav-col-heading {
+            color:white;
+        }
+        ul.footer-nav-col-links {
+            color:white;
+            list-style-type: none;
+        }
+    }
+}
+
+footer.page-footer::before {
+    content:"";
+    height: 50vh;
+    width: 500%;
+    position: absolute;
+    left: -200%;
+    z-index: -1;
+    background-color: $footer-bg-color;
+}
