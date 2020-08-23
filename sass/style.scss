@@ -1,4 +1,7 @@
-html, body, ul {
+html,
+body,
+ul,
+h2 {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -8,35 +11,19 @@ html, body, ul {
 	font-size: 100%;
 	font-family: inherit;
 	vertical-align: baseline;
-	font-family: 'Muli';
+	font-family: "Muli";
 }
 
-@font-face {
-	font-family: 'Muli';
-	src: url('/font/Muli/Muli-Bold.ttf') format('truetype');
+body {
+	div.container {
+		position: relative;
+	}
 }
 
-@font-face {
-	font-family: 'Muli-ExtraBoldItalic';
-	src: url('/font/Muli/Muli-BoldItalic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Muli-ExtraBoldItalic';
-	src: url('/font/Muli/Muli-ExtraBoldItalic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Muli-Light';
-	src: url('/font/Muli/Muli-Light.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Muli-Regular';
-	src: url('/font/Muli/Muli-Regular.ttf') format('truetype');
-}
 
 @import "variables";
+@import "fonts";
 @import "sections";
 @import "navigation-menu";
 @import "slider";
+@import "site-navigation";

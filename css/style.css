@@ -1,4 +1,7 @@
-html, body, ul {
+html,
+body,
+ul,
+h2 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,44 +11,46 @@ html, body, ul {
   font-size: 100%;
   font-family: inherit;
   vertical-align: baseline;
-  font-family: 'Muli';
+  font-family: "Muli";
+}
+
+body div.container {
+  position: relative;
 }
 
 @font-face {
-  font-family: 'Muli';
+  font-family: "Muli";
   src: url("/font/Muli/Muli-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Muli-ExtraBoldItalic';
+  font-family: "Muli-ExtraBoldItalic";
   src: url("/font/Muli/Muli-BoldItalic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Muli-ExtraBoldItalic';
+  font-family: "Muli-ExtraBoldItalic";
   src: url("/font/Muli/Muli-ExtraBoldItalic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Muli-Light';
+  font-family: "Muli-Light";
   src: url("/font/Muli/Muli-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Muli-Regular';
+  font-family: "Muli-ExtraLight";
+  src: url("/font/Muli/Muli-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Muli-Regular";
   src: url("/font/Muli/Muli-Regular.ttf") format("truetype");
 }
 
-div.container {
-  position: relative;
-}
-
-div.container div.main-section {
-  height: 100vh;
-  background-image: url("/images/slider-image1.png");
-  background-color: gray;
-  background-repeat: no-repeat;
-  background-size: cover;
+@font-face {
+  font-family: "Muli-ExtraBold";
+  src: url("/font/Muli/Muli-ExtraBold.ttf") format("truetype");
 }
 
 nav.main-navigation {
@@ -63,6 +68,7 @@ nav.main-navigation {
   left: 0;
   right: 0;
   overflow: hidden;
+  z-index: 100;
 }
 
 nav.main-navigation a.main-navigation-logo img {
@@ -76,7 +82,94 @@ nav.main-navigation ul.main-navigation-links {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50%;
   list-style: none;
+}
+
+div.slider {
+  height: 100vh;
+}
+
+div.slider div.slide1 {
+  height: 100%;
+  background-image: url("/images/slider-image1.png");
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.slider div.slider-single {
+  position: relative;
+}
+
+div.slider div.slider-single div.slider-single-content {
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+div.slider div.slider-single div.slider-single-content h2.slider-single-content-header {
+  color: #ffffff;
+  font-family: Muli-ExtraLight;
+  font-size: 2.5rem;
+}
+
+div.slider div.slider-single div.slider-single-content div.slider-single-content-subheader {
+  color: #00b6dc;
+  font-family: Muli-ExtraLight;
+  font-size: 2.5rem;
+}
+
+div.slider div.slider-single div.slider-single-content div.slider-single-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0;
+}
+
+div.slider div.slider-single div.slider-single-content div.slider-single-buttons div.slider-single-btn {
+  font-family: 'Muli-ExtraBold';
+  font-size: 14px;
+  border-radius: 24px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+div.slider div.slider-single div.slider-single-content div.slider-single-buttons div.btn-white {
+  background-color: #ffffff;
+  color: #002841;
+}
+
+div.slider div.slider-single div.slider-single-content div.slider-single-buttons div.btn-transparent {
+  color: #ffffff;
+  margin-left: 20px;
+  border: 2px solid #f0f3f5;
+}
+
+div.site-navigation {
+  position: fixed;
+  right: 5%;
+  top: 45%;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.site-navigation svg {
+  margin: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */

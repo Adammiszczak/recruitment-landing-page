@@ -9,6 +9,7 @@ nav.main-navigation {
     left: 0;
     right: 0;
     overflow: hidden;
+    z-index: 100;
     a.main-navigation-logo {
         img {
             height: 100px;
@@ -18,6 +19,7 @@ nav.main-navigation {
     ul.main-navigation-links {
         display: flex;
         justify-content: space-around;
+        align-items: center;;
         width: 50%;
         list-style: none;
     }
