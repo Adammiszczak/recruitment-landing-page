@@ -1,6 +1,7 @@
 html,
 body,
 ul,
+li,
 h2,
 input,
 textarea,
@@ -14,11 +15,15 @@ label, p {
   font-size: 100%;
   font-family: inherit;
   vertical-align: baseline;
-  font-family: "Muli";
+}
+
+ol, ul {
+  list-style: none;
 }
 
 body div.container {
   position: relative;
+  overflow: hidden;
 }
 
 @font-face {
@@ -82,6 +87,33 @@ section.page-section div.page-section-row {
 section.page-section div.page-section-row div.page-section-col {
   width: 50%;
   height: 100%;
+}
+
+section.page-section div.page-section-row div.page-section-col h2.page-section-col-heading {
+  font-family: "Muli-ExtraBold";
+  font-size: 2.25rem;
+  color: #002841;
+  margin-bottom: 44px;
+}
+
+section.page-section div.page-section-row div.page-section-col div.page-section-col-text {
+  font-family: "Muli-Regular";
+  color: #333333;
+  line-height: 32px;
+  font-size: 1.125rem;
+}
+
+section.page-section div.page-section-row div.page-section-col div.page-section-col-text p {
+  margin-bottom: 1.125rem;
+}
+
+section.page-section div.page-section-row div.page-section-col div.page-section-col-text ul li:before {
+  content: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAAiUlEQVQokZXQMQ5BURAF0EMUNiF2oaKxDb3obUHil9Yg0WkolDq1QidaobADkcgk/4to/rjd3Mx5eZmG3UVNZnhg8b3WqlNY4oA2in/gGUPsy7nIwsjpFwecopN84Ig5bgGveCVhF0/cM1etEl/dYIRtM4n6JZoEiiIDe+VyoFVVZq46wBjrT4M3AigZ824tNM8AAAAASUVORK5CYII=);
+  margin-right: 20px;
+}
+
+section.page-section div.page-section-row div.page-section-col div.page-section-col-text a {
+  color: #01a6c9;
 }
 
 section.page-section div.page-section-row div.page-section-col.section-image {
@@ -205,16 +237,44 @@ div.slider {
   height: 100vh;
 }
 
-div.slider div.slide1 {
+div.slider div.disabled {
+  display: none;
+}
+
+div.slider div.active {
+  display: block;
+}
+
+div.slider div.active:after {
+  width: 100%;
   height: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+div.slider div.slide1 {
   background-image: url("/images/slider-image1.png");
-  background-color: gray;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+div.slider div.slide2 {
+  background-image: url("/images/university-slider2.png");
+}
+
+div.slider div.slide3 {
+  background-image: url("/images/university-slider3.png");
 }
 
 div.slider div.slider-single {
   position: relative;
+  height: 100%;
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 div.slider div.slider-single div.slider-single-content {
@@ -224,6 +284,7 @@ div.slider div.slider-single div.slider-single-content {
   top: 50%;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 div.slider div.slider-single div.slider-single-content h2.slider-single-content-header {
@@ -236,6 +297,10 @@ div.slider div.slider-single div.slider-single-content div.slider-single-content
   color: #00b6dc;
   font-family: Muli-ExtraLight;
   font-size: 2.5rem;
+}
+
+div.slider div.slider-single div.slider-single-content svg.slider-control {
+  cursor: pointer;
 }
 
 div.slider div.slider-single div.slider-single-content div.slider-single-buttons {

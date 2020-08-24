@@ -12,6 +12,29 @@ section.page-section {
         div.page-section-col {
             width: 50%;
             height: 100%;
+            
+            h2.page-section-col-heading {
+                font-family: "Muli-ExtraBold";
+                font-size:2.25rem;
+                color:$heading-text-dark-color;
+                margin-bottom: 44px;
+            }
+            div.page-section-col-text {
+                font-family: "Muli-Regular";
+                color:$section-text-color;
+                line-height: 32px;
+                font-size: 1.125rem;
+                p {
+                    margin-bottom: 1.125rem;
+                }
+                ul li:before{
+                    content: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAAiUlEQVQokZXQMQ5BURAF0EMUNiF2oaKxDb3obUHil9Yg0WkolDq1QidaobADkcgk/4to/rjd3Mx5eZmG3UVNZnhg8b3WqlNY4oA2in/gGUPsy7nIwsjpFwecopN84Ig5bgGveCVhF0/cM1etEl/dYIRtM4n6JZoEiiIDe+VyoFVVZq46wBjrT4M3AigZ824tNM8AAAAASUVORK5CYII=);
+                    margin-right: 20px;
+                }
+                a {
+                   color:$link-text-color; 
+                }   
+            }
         }
         div.page-section-col.section-image {
             width: 50%;
