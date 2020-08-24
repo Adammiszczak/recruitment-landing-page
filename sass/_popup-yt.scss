@@ -1,0 +1,32 @@
+div.yt-popup {
+    img {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+
+div.yt-popup-modal {
+    position:fixed;
+    z-index:200;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    opacity:0;
+    display: none;
+    transition:.3s ease;
+    iframe.yt-popup-iframe {
+        position:absolute;
+        top:40%;
+        left:50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+div.yt-popup-modal.show-popup {
+    opacity:1;
+    display: inherit;
+}

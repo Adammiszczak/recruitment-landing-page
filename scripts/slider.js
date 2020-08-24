@@ -16,6 +16,8 @@ nextBtn.forEach(singleBtn => {
         } else {
             currentSlide++;
         }
+
+        
         allSlides[currentSlide].classList.add("active");
         allSlides[currentSlide - 1].classList.remove("active");
         allSlides[currentSlide - 1].classList.add("disabled");
