@@ -303,6 +303,22 @@ div.slider div.slider-single div.slider-single-content svg.slider-control {
   cursor: pointer;
 }
 
+div.slider div.slider-single div.slider-single-content svg.slider-control path.prev-fill-disabled {
+  fill: #ffffff;
+}
+
+div.slider div.slider-single div.slider-single-content svg.slider-control path.prev-fill-active {
+  fill: #ffcd19;
+}
+
+div.slider div.slider-single div.slider-single-content svg.slider-control path.next-fill-active {
+  fill: #ffcd19;
+}
+
+div.slider div.slider-single div.slider-single-content svg.slider-control path.next-fill-disabled {
+  fill: #ffffff;
+}
+
 div.slider div.slider-single div.slider-single-content div.slider-single-buttons {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,31 +1,48 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('test')
 
-    let prevBtn = document.querySelector("svg.slider-control.slide-prev");
-    let nextBtn = document.querySelector("svg.slider-control.slide-next");
+    let prevBtn = [...document.querySelectorAll("svg.slider-control.slide-prev")];
+    let nextBtn = [...document.querySelectorAll("svg.slider-control.slide-next")];
     let allSlides = [...document.querySelectorAll("div.slider-single")];
     let currentSlide = 0;
     let numberOfSlides = allSlides.length;
 
-    let nextSlide = () => {
-        currentSlide++;
-        console.log(currentSlide)
-        
-        console.log(currentSlide === numberOfSlides - 1);
-    }
-    
-    if ((currentSlide === numberOfSlides - 1) == true) {
-        nextBtn.removeEventListener('click', nextSlide,true)
-    } else {
-        nextBtn.addEventListener('click', nextSlide)
-    }
 
-
-
-    prevBtn.addEventListener('click', () => {
-        currentSlide--;
-        console.log(currentSlide);
+nextBtn.forEach(singleBtn => {
+    singleBtn.addEventListener('click', () => {
+        if ((currentSlide === numberOfSlides - 1) == true) {
+            singleBtn.firstElementChild.classList = "next-fill-disabled";
+            prevBtn[currentSlide].firstElementChild.classList = "prev-fill-active";
+            return;
+        } else {
+            currentSlide++;
+        }
+        allSlides[currentSlide].classList.add("active");
+        allSlides[currentSlide - 1].classList.remove("active");
+        allSlides[currentSlide - 1].classList.add("disabled");
     })
-    // console.log("prevBtn")
+})
+
+    prevBtn.forEach(singleBtn => {
+        singleBtn.addEventListener('click', () => {
+            if (currentSlide === 0) {
+                return;
+            }
+            currentSlide--;
+            
+            if (currentSlide > 0) {
+                singleBtn.firstElementChild.classList = "prev-fill-active";
+                console.log()
+            }
+
+            allSlides[currentSlide].classList.add("active");
+            allSlides[currentSlide + 1].classList.remove("active");
+            allSlides[currentSlide + 1].classList.add("disabled");
+            
+            console.log(currentSlide);
+        })
+    })
+
+    
+
 
 })

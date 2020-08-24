@@ -53,6 +53,18 @@ div.slider {
             }
             svg.slider-control {
                 cursor: pointer;
+                path.prev-fill-disabled {
+                    fill:$light-color;
+                }
+                path.prev-fill-active {
+                    fill:$slider-active-color;
+                }
+                path.next-fill-active {
+                    fill:$slider-active-color;
+                }
+                path.next-fill-disabled {
+                    fill:$light-color;
+                }
             } 
             div.slider-single-buttons {
                 display: flex;
