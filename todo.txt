@@ -1,3 +1,0 @@
-- formularz musi być walidowany oraz powinien zawierać podstawowe komunikaty dla użytkownika (stwórz Ajax, który wysyła dane do pustego pliku PHP, nie rób back-endu)
-- dodaj różnego rodzaju animacje oraz hovery, które wzbogacą stronę
-- responsive
