@@ -1,6 +1,6 @@
 # General info
 
-This landing page is cut from .psd file.
+This landing page is cut from .psd file. Live version is here [https://adammiszczak.github.io/recruitment-landing-page/](https://adammiszczak.github.io/recruitment-landing-page/)
 
 ## Local develop
 
