@@ -13,8 +13,16 @@ window.addEventListener('scroll', () => {
     }
 })
 
+
+
 hamburgerToggler.addEventListener('click', () => {
-    mobileList.style.display = mobileList.style.display === 'none' ? 'block' : 'none';
+    if (mobileList.style.display === '' || mobileList.style.display === 'none')
+    {
+        mobileList.style.display = 'block'
+    } else {
+        mobileList.style.display = 'none'
+    }
+    
 })
 
 

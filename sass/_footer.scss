@@ -2,7 +2,7 @@ footer.page-footer {
     position: relative;
     margin: 0 auto;
     justify-content: space-between;
-    height: 50vh;
+    min-height: 50vh;
     background-color: $footer-bg-color;
     display: flex;
     width: 80%;
@@ -61,4 +61,100 @@ footer.page-footer::before {
     left: -200%;
     z-index: -1;
     background-color: $footer-bg-color;
+}
+
+@media screen and (max-width: 1024px) { 
+    footer.page-footer {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+        justify-content: space-between;
+        div.page-footer-copy {
+            color:$light-color;
+            position: absolute;
+            bottom:2%;
+            right: 0;
+        }
+        div.page-footer-map {
+           display: flex;
+           gap: 20px;
+           flex-direction: column;
+           justify-content: space-between;
+           align-items: flex-start;
+           margin: 5% 0;
+            div.map-container {
+                width: 100%;
+                iframe.map-container-iframe {
+                   border-radius: 0%; 
+                   width: 100%;
+                   height:207px;
+                   margin-top:0;
+                }
+            }
+        }
+        div.page-footer-nav{
+            margin-top:10%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            div.footer-nav-col {
+                margin-bottom: 20px;
+            }
+            div.footer-nav-col-heading {
+                color:$light-color;
+                font-family: "Muli-ExtraBold";
+                font-size: 1rem;
+                margin-bottom: 25px;
+                line-height: 0.750rem;
+            }
+            ul.footer-nav-col-links {
+                display:flex;
+                flex-flow: row;
+                justify-content: left;
+                flex-wrap: wrap;
+                color:$light-color;
+                list-style-type: none;
+                li {
+                    font-family: "Muli-Regular";
+                    font-size: 1rem;
+                    padding-right: 20px;
+                    padding-bottom: 20px;
+                    line-height: 0.750rem;
+                }
+            }
+        }
+
+        }
+    }
+    footer.page-footer::before {
+        content:"";
+        height: 100%;
+        width: 500%;
+        position: absolute;
+        left: -200%;
+        z-index: -1;
+        background-color: $footer-bg-color;
+}
+
+@media screen and (max-width: 768px) { 
+    footer.page-footer {
+
+        div.page-footer-map {
+           gap: 20px;
+           display: flex;
+           flex-direction: column;
+           margin: 10% 0;
+            div.map-container {
+                width: 100%;
+                iframe.map-container-iframe {
+                    border-radius: 0%; 
+                    width: 100%;
+                    height:207px;
+                    margin-top:0;
+                }
+            }
+        }
+    }
 }
