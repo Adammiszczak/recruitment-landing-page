@@ -31,42 +31,42 @@ body div.container {
 
 @font-face {
   font-family: "Muli";
-  src: url("font/Muli/Muli-Bold.ttf") format("truetype");
+  src: url("/font/Muli/Muli-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Muli-ExtraBold";
-  src: url("font/Muli/Muli-BoldItalic.ttf") format("truetype");
+  src: url("/font/Muli/Muli-BoldItalic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Muli-ExtraBoldItalic";
-  src: url("font/Muli/Muli-ExtraBoldItalic.ttf") format("truetype");
+  src: url("/font/Muli/Muli-ExtraBoldItalic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Muli-Light";
-  src: url("font/Muli/Muli-Light.ttf") format("truetype");
+  src: url("/font/Muli/Muli-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Muli-ExtraLight";
-  src: url("font/Muli/Muli-ExtraLight.ttf") format("truetype");
+  src: url("/font/Muli/Muli-ExtraLight.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Muli-Regular";
-  src: url("font/Muli/Muli-Regular.ttf") format("truetype");
+  src: url("/font/Muli/Muli-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Muli-ExtraBold";
-  src: url("font/Muli/Muli-ExtraBold.ttf") format("truetype");
+  src: url("/font/Muli/Muli-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Muli-SemiBold";
-  src: url("font/Muli/Muli-SemiBold.ttf") format("truetype");
+  src: url("/font/Muli/Muli-SemiBold.ttf") format("truetype");
 }
 
 section.page-section {
@@ -520,15 +520,15 @@ div.slider div.active:after {
 }
 
 div.slider div.slide1 {
-  background-image: url("images/slider-image1.png");
+  background-image: url("/images/slider-image1.png");
 }
 
 div.slider div.slide2 {
-  background-image: url("images/university-slider2.png");
+  background-image: url("/images/university-slider2.png");
 }
 
 div.slider div.slide3 {
-  background-image: url("images/university-slider3.png");
+  background-image: url("/images/university-slider3.png");
 }
 
 div.slider div.slider-single {
