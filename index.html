@@ -43,6 +43,11 @@
         <li>Szkolenia</li>
         <li>Usługi</li>
       </ul>
+      <div class="main-navigation-hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </nav>
     <div class="slider">
       <div class="slider-single slide1 active">
@@ -198,19 +203,19 @@
       </div>
     </section>
     <section class="page-section-cta">
-      <p class="page-section-cta-heading"> Nie znalazłeś odpowiedniego kontaktu?</p>
+      <p class="page-section-cta-heading">Nie znalazłeś odpowiedniego kontaktu?</p>
       <p class="page-section-cta-subheading">Skorzystaj z formularza.</p>
       <form action="" class="page-section-cta-form">
-        <input type="text" name="">
-        <input type="text" surname="">
-        <input type="email" email="">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <input type="checkbox" name="" id="cta-consent">
-        <label for="cta-conset" id="cta-consent-label">Wyrażam zgodę na przetwarzanie moich danych osobowych w
-          rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004
-          roku Prawo telekomunikacyjne w celach marketingowych przez Collegium Da Vinci i oświadczam, iż podanie przeze
-          mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danych
-          osobowych, ich zmiany oraz usunięcia.</label>
+        <input type="text" name="" placeholder="Imię" required>
+        <input type="text" surname="" placeholder="Nazwisko" required>
+        <input type="email" email="" placeholder="Adres e-mail" required>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Treść wiadomości" required></textarea>
+        <div class="cta-consent-row">
+        <input type="checkbox" name="" id="cta-consent" required>
+        <label for="cta-conset" class="cta-consent-label">Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych przez Collegium Da Vinci i oświadczam, iż podanie przezemnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danychosobowych, ich zmiany oraz usunięcia.
+        </label>
+        </div>
+        <input type="submit" value="test">
       </form>
     </section>
     <footer class="page-footer">
@@ -218,13 +223,15 @@
         <p>ul. Głogowska 10<br />
           61-719 Poznań<br />
           tel. 61 27 11 000</p>
-        <div>MAPA</div>
+        <div class="map-container">
+          <iframe class="map-container-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9735.755834676123!2d16.9385989!3d52.4077825!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x78a2c4b6155b92e7!2sCrafton%20Agencja%20Interaktywna!5e0!3m2!1spl!2spl!4v1598308950102!5m2!1spl!2spl"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
       </div>
       <div class="page-footer-nav">
         <div class="footer-nav-col">
           <div class="footer-nav-col-heading">O nas</div>
           <ul class="footer-nav-col-links">
-            <li>Dlaczego CFV</li>
+            <li>Dlaczego CDV</li>
             <li>Kadra naukowa</li>
             <li>Dla mediów</li>
             <li>Kontakt</li>
@@ -267,11 +274,14 @@
           </ul>
         </div>
       </div>
+      <div class="page-footer-copy">Projekt i realizacja: Crafton</div>
   </div>
+
   </footer>
   </div>
   <script src="/scripts/slider.js"></script>
   <script src="/scripts/popup-yt.js"></script>
+  <script src="/scripts/navbar.js"></script>
 </body>
 
 </html>
