@@ -21,6 +21,9 @@ nav.main-navigation {
         align-items: center;
         width: 70%;
         list-style: none;
+        li:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -49,6 +52,9 @@ nav.main-navigation-scrolled {
         align-items: center;
         width: 70%;
         list-style: none;
+        li:hover {
+            cursor: pointer;
+        }
     }
     div.main-navigation-hamburger {
         display: none;
@@ -61,8 +67,7 @@ nav.main-navigation-scrolled {
             background-color: $light-color;
         }
     }
-} 
-
+}
 
 @media screen and (max-width: 767px) {
     nav.main-navigation {
@@ -88,22 +93,24 @@ nav.main-navigation-scrolled {
         }
         ul.main-navigation-links {
             position: absolute;
-            top:100%;
+            top: 100%;
             right: 0;
             left: 0;
             width: 100%;
             list-style: none;
             display: none;
-            color:$light-color;
+            color: $light-color;
             background-color: $footer-bg-color;
             padding-left: 10%;
             border-top: 1px solid $light-color;
 
             li {
                 padding: 10px 0;
-            }
-            li:hover {
-                cursor: pointer;
+                width: auto;
+                display: block;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
         div.main-navigation-hamburger {
@@ -112,16 +119,15 @@ nav.main-navigation-scrolled {
             div {
                 height: 1px;
                 width: 20px;
-                border: 1px solid $light-color; 
+                border: 1px solid $light-color;
                 margin: 5px 0;
                 background-color: $light-color;
             }
-        }
-        div.main-navigation-hamburger:hover {
-            cursor: pointer;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
-
 
     nav.main-navigation-scrolled {
         ul.main-navigation-links {
@@ -130,7 +136,6 @@ nav.main-navigation-scrolled {
         div.main-navigation-hamburger {
             display: block;
             div {
-                
                 height: 1px;
                 width: 20px;
                 border: 1px solid $light-color;

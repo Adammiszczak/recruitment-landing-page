@@ -5,7 +5,9 @@ li,
 h2,
 input,
 textarea,
-label,p, iframe {
+label,
+p,
+iframe {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -17,7 +19,8 @@ label,p, iframe {
 	vertical-align: baseline;
 }
 
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
 

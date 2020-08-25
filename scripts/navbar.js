@@ -6,7 +6,7 @@ let hamburgerToggler = document.querySelector("div.main-navigation-hamburger");
 let mobileList = document.querySelector("ul.main-navigation-links")
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY !== 0 && window.innerWidth > 767) {
+    if (window.scrollY > 50 && window.innerWidth > 767) {
         navbarMain.className = "main-navigation-scrolled"
     } else {
         navbarMain.className = "main-navigation"

@@ -5,18 +5,19 @@ div.slider {
     }
     div.active {
         display: block;
+        &:after {
+            width: 100%;
+            height: 100%;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            pointer-events: none;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
     }
-    div.active:after {
-        width: 100%;
-        height: 100%;
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        pointer-events: none;
-        background: rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
+
     div.slide1 {
         background-image: url("/images/slider-image1.png");
     }
@@ -54,18 +55,18 @@ div.slider {
             svg.slider-control {
                 cursor: pointer;
                 path.prev-fill-disabled {
-                    fill:$light-color;
+                    fill: $light-color;
                 }
                 path.prev-fill-active {
-                    fill:$slider-active-color;
+                    fill: $slider-active-color;
                 }
                 path.next-fill-active {
-                    fill:$slider-active-color;
+                    fill: $slider-active-color;
                 }
                 path.next-fill-disabled {
-                    fill:$light-color;
+                    fill: $light-color;
                 }
-            } 
+            }
             div.slider-single-buttons {
                 display: flex;
                 margin: 40px 0;
@@ -77,15 +78,55 @@ div.slider {
                     height: 50px;
                     line-height: 50px;
                     padding: 0 20px;
+                    text-align: center;
                 }
                 div.btn-white {
                     background-color: $light-color;
                     color: $btn-text-dark-color;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
+
                 div.btn-transparent {
                     color: $light-color;
                     margin-left: 20px;
                     border: 2px solid $btn-slider-border;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    div.slider {
+        div.slider-single {
+            div.slider-single-content {
+                div.slider-single-buttons {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 40px 0;
+                    div.slider-single-btn {
+                        font-family: "Muli-ExtraBold";
+                        font-size: 14px;
+                        border-radius: 24px;
+                        box-sizing: content-box;
+                        height: 50px;
+                        line-height: 50px;
+                        padding: 0 20px;
+                        margin: 10px 0;
+                        width: 70%;
+                    }
+                    div.btn-white {
+                        background-color: $light-color;
+                        color: $btn-text-dark-color;
+                    }
+                    div.btn-transparent {
+                        margin-left: 0;
+                    }
                 }
             }
         }

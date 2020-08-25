@@ -14,25 +14,25 @@ section.page-section {
             height: 100%;
             h2.page-section-col-heading {
                 font-family: "Muli-ExtraBold";
-                font-size:2.25rem;
-                color:$heading-text-dark-color;
+                font-size: 2.25rem;
+                color: $heading-text-dark-color;
                 margin-bottom: 44px;
             }
             div.page-section-col-text {
                 font-family: "Muli-Regular";
-                color:$section-text-color;
+                color: $section-text-color;
                 line-height: 32px;
                 font-size: 1.125rem;
                 p {
                     margin-bottom: 1.125rem;
                 }
-                ul li:before{
+                ul li:before {
                     content: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAAiUlEQVQokZXQMQ5BURAF0EMUNiF2oaKxDb3obUHil9Yg0WkolDq1QidaobADkcgk/4to/rjd3Mx5eZmG3UVNZnhg8b3WqlNY4oA2in/gGUPsy7nIwsjpFwecopN84Ig5bgGveCVhF0/cM1etEl/dYIRtM4n6JZoEiiIDe+VyoFVVZq46wBjrT4M3AigZ824tNM8AAAAASUVORK5CYII=);
                     margin-right: 20px;
                 }
                 a {
-                   color:$link-text-color; 
-                }   
+                    color: $link-text-color;
+                }
             }
         }
         div.page-section-col.section-image {
@@ -66,17 +66,24 @@ section.page-section-cta {
         font-size: 1.125rem;
         line-height: 2rem;
         font-family: "Muli-SemiBold";
-        color:$section-text-color;
+        color: $section-text-color;
     }
     p.page-section-cta-subheading {
         font-size: 0.925rem;
         line-height: 1.7rem;
         font-family: "Muli-SemiBold";
-        color:$subheading-cta-section;
+        color: $subheading-cta-section;
         margin-bottom: 30px;
     }
     form.page-section-cta-form {
         width: 50%;
+        div.cta-form-row {
+            display: flex;
+            gap: 10px;
+            div.cta-form-col {
+                width: 100%;
+            }
+        }
         input {
             margin-bottom: 20px;
             box-sizing: border-box;
@@ -87,9 +94,8 @@ section.page-section-cta {
         }
 
         input[type="text"] {
-            display: inline-block;
-            width: 49%;
-            height: 49px;
+            width: 100%;
+            height: 50px;
         }
         input[type="text"][name] {
             margin-right: 10px;
@@ -99,10 +105,24 @@ section.page-section-cta {
             width: 100%;
             height: 49px;
         }
+        input[type="submit"] {
+            background: $light-blue-color;
+            color: $light-color;
+            display: block;
+            margin: 0 auto;
+            border-radius: 25px;
+            font-family: "Muli-ExtraBold";
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            width: 120px;
+            height: 50px;
+            text-align: center;
+            padding: 10px;
+        }
         textarea {
             display: block;
             box-sizing: border-box;
-            width:100%;
+            width: 100%;
             resize: none;
             margin-bottom: 20px;
             padding: 18px 15px;
@@ -119,7 +139,7 @@ section.page-section-cta {
             }
             .cta-consent-label {
                 font-family: "Muli-SemiBold";
-                color:$btn-text-dark-color;
+                color: $btn-text-dark-color;
                 font-size: 0.625rem;
                 line-height: 1rem;
                 margin-bottom: 30px;
@@ -128,8 +148,7 @@ section.page-section-cta {
     }
 }
 
-
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
     section.page-section {
         div.page-section-row {
             display: flex;
